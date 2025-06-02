@@ -20,16 +20,17 @@
 		},
 		"git.enableSmartCommit": true,
 		"git.postCommitCommand": "sync",
-		// "files.exclude": {
-		// 	"_site/**": true
-		// },
+		"files.exclude": {
+			// "_site/**": true
+			"quartz_repo/.github/workflows/**": true
+		},
 		"files.insertFinalNewline": true,
 		// "markdown.styles": ["custom-tag-style.css"]
 		 "foam.files.ignore": [
 			"quartz/**/*",
 			"quartz_repo/**/*",
 		],
-		"foam.files.newNotePath": "currentDir"
+		"foam.files.newNotePath": "currentDir",
 	},
 	"extensions": {
 		// See http://go.microsoft.com/fwlink/?LinkId=827846
