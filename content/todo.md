@@ -1,4 +1,9 @@
-# Todo
+---
+title: Todo
+# draft: false
+# tags:
+#   - example-tag
+---
 
 You can create todos in Foam.
 
