@@ -25,6 +25,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Symlink content folder to Quartz
+        working-directory: ./quartz_repo
+        run: |
+          rm -rf content
+          ln -s ../content
       - name: Install Dependencies
         working-directory: ./quartz_repo
         run: npm ci
