@@ -13,4 +13,3 @@ See [[link-reference-definitions]] for more information.
 ## Customising the style
 
 You can edit `assets/css/style.scss` to change how published pages look.
-

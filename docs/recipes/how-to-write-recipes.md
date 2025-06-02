@@ -24,7 +24,7 @@ When creating new recipes, if you don't know which extension does what, you can 
 
 Here we describe how the extension should be used.
 
-![Demo](../../assets/images/foam-navigation-demo.gif)
+![Demo](../assets/images/foam-navigation-demo.gif)
 
 You may include a screenshot or GIF of the feature in action by uploading an image to the `assets/images` directory. Please try to keep GIFs as small as possible by recording them with a low frame rate.
 
@@ -35,4 +35,3 @@ That's pretty much it!
 You can add [[recipes]] by creating a pull request to [foambubble/foam](https://github.com/foambubble/foam) on GitHub.
 
 Read more in our [[contribution-guide]].
-

@@ -7,4 +7,3 @@ This #recipe contains tips on how to leverage VS Code search features.
 Run `Cmd` + `P` ( `Ctrl` +  `P` on Windows ) and type a name (like 'issues') to find a note associated with that name (like 'known-issues.md' )
 
 Run `Cmd` + `Shift` + `F` ( `Ctrl` + `Shift` + `F` on Windows ) and type a word (like 'links') to find all the notes that contain that term.
-

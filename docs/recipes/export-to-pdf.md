@@ -40,7 +40,7 @@ Make sure to replace `$WORKSPACE/.pandoc` with the real full path to the `.pando
 
 The PDF should look something like this:
 
-![Sample PDF output](../../assets/images/pdf_output.png)
+![Sample PDF output](../assets/images/pdf_output.png)
 
 ## Options
 

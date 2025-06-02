@@ -41,4 +41,3 @@ You can see a few panels on the left, including:
 ## Settings
 
 To view or change the settings in VS Code, press `cmd+,` on Mac and `ctrl+,` on Windows/Linux.
-

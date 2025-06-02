@@ -36,7 +36,7 @@ This is a [link to google](https://www.google.com).
 This is a wikilink (aka internal link) to [[note-properties]].
 
 Here is an image:
-![image](../../attachments/foam-icon.png)
+![image](assets/images/foam-icon.png)
 
 > this is a blockquote
 > it can span multiple lines
@@ -67,4 +67,3 @@ You can `inline code` or
 you can create
 code blocks
 ```
-

@@ -29,7 +29,7 @@ Tags can also be visualized in the Foam Graph Explorer. See [[graph-visualizatio
 
 It is possible to customize the way that tags look in the Markdown Preview panel that renders your Foam notes. This requires some knowledge of the CSS language, which is used to customize the styles of web technologies such as VSCode. A cursory introduction to CSS can be [found here](https://www.freecodecamp.org/news/get-started-with-css-in-5-minutes-e0804813fc3e/).
 
-1. Create a CSS file within your Foam project, for example in `.foam/css/custom-tag-style.css` or [.vscode/custom-tag-style.css](../../.vscode/custom-tag-style.css)
+1. Create a CSS file within your Foam project, for example in `.foam/css/custom-tag-style.css` or `.vscode/custom-tag-style.css`
 2. Add CSS code that targets the `.foam-tag` class
 3. Add a rule for each [CSS property](https://www.w3schools.com/cssref/index.php) you would like applied to your tags.
 4. Open the `.vscode/settings.json` file (or the Settings browser with `ctrl+,`)
@@ -46,7 +46,7 @@ The end result will be a CSS file that looks similar to the content below. Now y
 }
 ```
 
-![custom tag style demo](../../assets/images/custom-tag-style.png)
+![custom tag style demo](../assets/images/custom-tag-style.png)
 
 ## Using backlinks in place of tags
 
@@ -55,4 +55,3 @@ For example you can tag your notes about books with [[book]].
 
 [note-properties|note property]: note-properties.md "Note Properties"
 [graph-visualization]: graph-visualization.md "Graph Visualization"
-

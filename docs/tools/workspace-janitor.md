@@ -19,7 +19,7 @@ In the future, Janitor can help you with
 
 Execute the "Foam: Run Janitor" command from the command palette.
 
-![Foam Janitor demo](../../assets/images/foam-janitor-demo.gif)
+![Foam Janitor demo](../assets/images/foam-janitor-demo.gif)
 
 ## Using Janitor from command line (Experimental)
 
@@ -35,4 +35,3 @@ The Janitor can be installed from [NPM](https://www.npmjs.com/) and executed as 
 You can run the Janitor as a git hook on every commit to ensure your workspace links are up to date. This can be especially helpful if you edit your markdown documents from other apps.
 
 You can also run the Janitor from a GitHub action to ensure that all changes coming to your workspace are up to date. This can be useful when editing your Foam notes from mobile (i.e. via [GitJournal](https://gitjournal.io)), or your Foam has multiple contributors and you want to ensure that all changes are correctly integrated.
-

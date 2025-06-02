@@ -82,4 +82,3 @@ You can ignore the `_site` directory by adding any of the following settings to 
 After changing the setting in your workspace, you can run the [[workspace-janitor]] command to convert all existing definitions.
 
 See [[link-reference-definition-improvements]] for further discussion on current problems and potential solutions.
-

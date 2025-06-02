@@ -50,4 +50,3 @@ See [[publishing]] for more details.
 - [[workspace-janitor]]
 - [[orphans]]
 - [[foam-logging-in-vscode]]
-
