@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Symlink content folder to Quartz
+      - name: Copy config files to Quartz
         working-directory: ./quartz_repo
         run: |
           cp ../quartz.config.ts .
