@@ -1,6 +1,6 @@
 ---
 title: Sparse Matrix Storage
-draft: true
+draft: false
 tags:
 - ChatGPT
 type: ChatGPT transcript
