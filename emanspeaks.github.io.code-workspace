@@ -1,54 +1,68 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"files.autoSave": "onFocusChange",
-		// "editor.minimap.enabled": false,
-		"editor.wrappingIndent": "indent",
-		// "editor.overviewRulerBorder": false,
-		// "editor.lineHeight": 24,
-		"foam.edit.linkReferenceDefinitions": "off",
-		// "foam.edit.linkReferenceDefinitions": "withoutExtensions",
-		"[markdown]": {
-			"editor.quickSuggestions": {
-				"other": true,
-				"comments": false,
-				"strings": false
-			}
-		},
-		"git.enableSmartCommit": true,
-		"git.postCommitCommand": "sync",
-		"files.exclude": {
-			// "_site/**": true
-			"quartz_repo/.github/workflows/**": true
-		},
-		"files.insertFinalNewline": true,
-		// "markdown.styles": ["custom-tag-style.css"]
-		 "foam.files.ignore": [
-			"readme.md",
-			"quartz/**/*",
-			"quartz_repo/**/*"
-		],
-		"foam.files.newNotePath": "currentDir",
-		"foam.completion.useAlias": "whenPathDiffersFromTitle",
-		"foam.openDailyNote.directory": "content/journal",
-		"foam.openDailyNote.onStartup": true
-		// "foam.openDailyNote.titleFormat": ""
-	},
-	"extensions": {
-		// See http://go.microsoft.com/fwlink/?LinkId=827846
-		// for the documentation about the extensions.json format
-		"recommendations": [
-			// Foam's own extension
-			"foam.foam-vscode",
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.autoSave": "onFocusChange",
+    // "editor.minimap.enabled": false,
+    "editor.wrappingIndent": "indent",
+    // "editor.overviewRulerBorder": false,
+    // "editor.lineHeight": 24,
+    "foam.edit.linkReferenceDefinitions": "off",
+    // "foam.edit.linkReferenceDefinitions": "withoutExtensions",
+    "[markdown]": {
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+      }
+    },
+    "git.enableSmartCommit": true,
+    "git.postCommitCommand": "sync",
+    "files.exclude": {
+      // "_site/**": true
+      "quartz_repo/.github/workflows/**": true
+    },
+    "files.insertFinalNewline": true,
+    // "markdown.styles": ["custom-tag-style.css"]
+     "foam.files.ignore": [
+      "readme.md",
+      "quartz/**/*",
+      "quartz_repo/**/*"
+    ],
+    "foam.files.newNotePath": "currentDir",
+    "foam.completion.useAlias": "whenPathDiffersFromTitle",
+    "foam.openDailyNote.directory": "content/journal",
+    "foam.openDailyNote.onStartup": true,
+    "foam.preview.embedNoteType": "content-inline"
+    // "foam.openDailyNote.titleFormat": ""
+  },
+  "extensions": {
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+      // Foam's own extension
+      "foam.foam-vscode",
 
-			// Tons of markdown goodies (lists, tables of content, so much more)
-			"yzhang.markdown-all-in-one",
+      // Tons of markdown goodies (lists, tables of content, so much more)
+      "yzhang.markdown-all-in-one",
 
-			// "mushan.vscode-paste-image"
-		]
-	}
+      // "mushan.vscode-paste-image"
+      "bierner.markdown-yaml-preamble"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python Debugger: Current File",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
 }
