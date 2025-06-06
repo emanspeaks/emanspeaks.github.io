@@ -1,5 +1,5 @@
 ---
-title: C programming language
+title: C (programming language)
 alias: C
 # draft: true
 tags:

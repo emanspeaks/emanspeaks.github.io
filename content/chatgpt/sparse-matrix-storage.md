@@ -7,6 +7,7 @@ type: ChatGPT transcript
 date: 2025-05-27 15:13:14.737846+00:00
 lastmod: 2025-06-05 03:06:57.585775+00:00
 ---
+<!-- LTeX: enabled=false -->
 
 ## user (2025-05-27 15:13+00:00)
 

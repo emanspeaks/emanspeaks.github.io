@@ -63,7 +63,7 @@ def process_msg(msgdata: dict):
         msgstr += f'author: {author}\n'
         msgstr += '\n'
         msgstr += ydump(msg)
-        msgstr += '---\n'
+        msgstr += '---\n<!-- LTeX: enabled=false -->\n'
         # msgstr += f'**{author}**<br>\n*{create_time}*\n\n'
         # header = f'\n**{author}:** *({create_time.isoformat(' ', 'minutes')})*\n\n'  # noqa: E501
         header = f'\n## {author} ({create_time.isoformat(' ', 'minutes')})\n\n'  # noqa: E501
@@ -122,11 +122,11 @@ for chat in chatgpt_data:
     indexstr += 'type: ChatGPT transcript\n'
     indexstr += f'date: {create_time}\n'
     indexstr += f'lastmod: {lastmod_time}\n'
-    fullstr = indexstr + '---\n'
+    fullstr = indexstr + '---\n<!-- LTeX: enabled=false -->\n'
     if chat:
         indexstr += f'\n{ydump(chat)}'
 
-    indexstr += '---\n'
+    indexstr += '---\n<!-- LTeX: enabled=false -->\n'
 
     msglist = list()
     msgtxtlist = list()
