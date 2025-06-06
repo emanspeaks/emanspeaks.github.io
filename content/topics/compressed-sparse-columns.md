@@ -10,7 +10,7 @@ foam_template:
   description: Standard blank notes with YAML frontmatter
 ---
 
-* Stores [[sparse matrices]] as three arrays:
+* Stores [[sparse-matrices|sparse matrices]] as three arrays:
   * `val`: the non-zero values, column by column.
   * `row_ind`: the row indices corresponding to each value in `val`.
   * `col_ptr`: an array such that `col_ptr[j]` is the index in `val` where column `j` starts, and `col_ptr[j+1]` is where it ends.

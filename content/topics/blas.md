@@ -11,4 +11,4 @@ foam_template:
 
 * **BLAS (Basic Linear Algebra Subprograms)**
 * The original **BLAS (Basic Linear Algebra Subprograms)** is strictly for **dense** linear algebra operations.
-* Levels 1, 2, and 3 (vector, matrix-vector, matrix-matrix ops) assume dense storage and operate on full arrays — no support for [[sparse matrices|sparse matrix]] formats.
+* Levels 1, 2, and 3 (vector, matrix-vector, matrix-matrix ops) assume dense storage and operate on full arrays — no support for [[sparse-matrices|sparse matrix]] formats.

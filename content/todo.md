@@ -1,6 +1,6 @@
 ---
-title: Todo
-# draft: false
+title: To Do
+draft: true
 # tags:
 #   - example-tag
 ---
@@ -9,4 +9,4 @@ title: Todo
 You can also select multiple lines and mark them all at once! -->
 
 - [ ] Add documentation for ChatGPT threads
-- [ ] Add notes about [Zig](https://ziglang.org)
+- [ ] Add notes about [[Zig]]

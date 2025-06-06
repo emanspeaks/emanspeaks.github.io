@@ -8,4 +8,5 @@ foam_template:
   description: Standard blank notes with YAML frontmatter
 ---
 
-* content
+* System language written by Andrew Kelley intended as a modern replacement for [[c-programming-language|C]]
+* https://ziglang.org
