@@ -7,3 +7,5 @@ Sandia
 bitmasks
 chatgpt
 SNOPT
+sqp
+sqp

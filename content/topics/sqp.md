@@ -1,8 +1,6 @@
 ---
-title: sequential quadratic programming
+title: SQP
 # draft: true
-alias:
-  - SQP
 tags:
   - optimization
 type: note
@@ -10,4 +8,4 @@ foam_template:
   description: Standard blank notes with YAML frontmatter
 ---
 
-* content
+* Sequential quadratic programming (SQP)
