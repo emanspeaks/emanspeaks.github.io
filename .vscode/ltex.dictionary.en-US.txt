@@ -1,0 +1,9 @@
+Zig
+thunderdome
+performant
+BLAS
+LAPACK
+Sandia
+bitmasks
+chatgpt
+SNOPT

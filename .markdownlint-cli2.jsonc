@@ -1,0 +1,6 @@
+{
+  "ignores": [
+    "**/private/chatgpt/**/*",
+    "**/content/chatgpt/**/*"
+  ]
+}

@@ -1,9 +1,8 @@
 ---
 title: ChatGPT
-draft: true
+# draft: true
 tags:
-foam_template:
-  description: Standard blank notes with YAML frontmatter
+  - ChatGPT
 ---
 
 ## Exporting ChatGPT chat data

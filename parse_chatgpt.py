@@ -4,17 +4,17 @@ from datetime import datetime, UTC
 from yaml import dump as ydump
 
 HERE = Path(__file__).parent
-privatedir = HERE/'private'
-contentdir = HERE/'content'
+private_dir = HERE/'private'
+content_dir = HERE/'content'
 
-private_chatgptdir = privatedir/'chatgpt'
-public_chatgptdir = contentdir/'chatgpt'
-chatgptfile = private_chatgptdir/'conversations.json'
-# transcriptdir = public_chatgptdir/'transcripts'
-transcriptdir = private_chatgptdir/'transcripts'
+private_chatgpt_dir = private_dir/'chatgpt'
+public_chatgpt_dir = content_dir/'chatgpt'
+chatgpt_file = private_chatgpt_dir/'conversations.json'
+# transcript_dir = public_chatgpt_dir
+transcript_dir = private_chatgpt_dir/'transcripts'
 
-transcriptdir.mkdir(parents=True, exist_ok=True)
-chatgptdata = jloads(chatgptfile.read_text())
+transcript_dir.mkdir(parents=True, exist_ok=True)
+chatgpt_data = jloads(chatgpt_file.read_text())
 
 
 def utc_from_timestamp(ts: str | int | float):
@@ -50,23 +50,23 @@ def process_msg(msgdata: dict):
         if not content or not parts:
             return
 
-        createtime = utc_from_timestamp(msg.pop('create_time'))
-        lastmodtime = utc_from_timestamp(msg.pop('update_time'))
+        create_time = utc_from_timestamp(msg.pop('create_time'))
+        lastmod_time = utc_from_timestamp(msg.pop('update_time'))
 
         msgstr = '---\n'
         msgstr += 'draft: true\n'
         msgstr += 'tags:\n'
         msgstr += '- ChatGPT\n'
         msgstr += 'type: ChatGPT message\n'
-        msgstr += f'date: {createtime}\n'
-        msgstr += f'lastmod: {lastmodtime}\n'
+        msgstr += f'date: {create_time}\n'
+        msgstr += f'lastmod: {lastmod_time}\n'
         msgstr += f'author: {author}\n'
         msgstr += '\n'
         msgstr += ydump(msg)
         msgstr += '---\n'
-        # msgstr += f'**{author}**<br>\n*{createtime}*\n\n'
-        # header = f'\n**{author}:** *({createtime.isoformat(' ', 'minutes')})*\n\n'  # noqa: E501
-        header = f'\n## {author} ({createtime.isoformat(' ', 'minutes')})\n\n'  # noqa: E501
+        # msgstr += f'**{author}**<br>\n*{create_time}*\n\n'
+        # header = f'\n**{author}:** *({create_time.isoformat(' ', 'minutes')})*\n\n'  # noqa: E501
+        header = f'\n## {author} ({create_time.isoformat(' ', 'minutes')})\n\n'  # noqa: E501
 
         msgtxt = ''
         if content['content_type'] in ("text", "multimodal_text"):
@@ -99,18 +99,18 @@ def process_msg(msgdata: dict):
             return msgstr, header + msgtxt
 
 
-for chat in chatgptdata:
+for chat in chatgpt_data:
     chat: dict
     title: str = chat.pop('title')
-    createtime = utc_from_timestamp(chat.pop('create_time'))
-    lastmodtime = utc_from_timestamp(chat.pop('update_time'))
+    create_time = utc_from_timestamp(chat.pop('create_time'))
+    lastmod_time = utc_from_timestamp(chat.pop('update_time'))
     messages = chat.pop('mapping')
     lastnode: str = chat.pop('current_node')
 
     titleslug = title.replace(' ', '-').lower()
-    fullfile = (transcriptdir/titleslug).with_suffix('.md')
+    fullfile = (transcript_dir/titleslug).with_suffix('.md')
 
-    chatdir = transcriptdir/'parts'/titleslug
+    chatdir = transcript_dir/'parts'/titleslug
     chatdir.mkdir(parents=True, exist_ok=True)
 
     indexfile = chatdir/'index.md'
@@ -120,8 +120,8 @@ for chat in chatgptdata:
     indexstr += 'tags:\n'
     indexstr += '- ChatGPT\n'
     indexstr += 'type: ChatGPT transcript\n'
-    indexstr += f'date: {createtime}\n'
-    indexstr += f'lastmod: {lastmodtime}\n'
+    indexstr += f'date: {create_time}\n'
+    indexstr += f'lastmod: {lastmod_time}\n'
     fullstr = indexstr + '---\n'
     if chat:
         indexstr += f'\n{ydump(chat)}'

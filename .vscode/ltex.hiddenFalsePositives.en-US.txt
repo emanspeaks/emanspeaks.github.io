@@ -1,0 +1,7 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWhat I set out to do after this was to develop a custom BLAS-like fundamental library for sparse matrix operations where I could control the compiler optimization at a more granular level given a priori knowledge of where things might be sensitive and make appropriate choices accordingly.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcontent\\E$"}
+{"rule":"TO_DO_HYPHEN","sentence":"^\\QTest out adding daily journal\nConfigure Quartz and Foam defaults\nClear out [inbox] and [todo]\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcontent\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QThis lets you efficiently iterate over all non-zeros in a given column — ideal for operations like \\( A^T y \\) or Jacobian transposes that are common in [sequential quadratic programming|SQP] methods.\\E$"}
+{"rule":"NON_STANDARD_WORD","sentence":"^\\QThis lets you efficiently iterate over all non-zeros in a given column — ideal for operations like \\( A^T y \\) or Jacobian transposes that are common in [sequential quadratic programming|SQP] methods.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSNOPT (Sparse Nonlinear OPTimizer)\nStores [sparse matrices] in [compressed-sparse-columns|CSC] format\nThe [jacobian-matrix|Jacobian matrix] in constrained optimization often has many more rows than columns (i.e. many constraints and relatively few variables), so it's efficient to store and access columns.\\E$"}
