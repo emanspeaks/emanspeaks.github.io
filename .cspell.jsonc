@@ -1,0 +1,39 @@
+{
+  "version": "0.2",
+  "import": [
+    // ".cspell/cesium/cspell-ext.json"
+  ],
+  "ignorePaths": [
+    ".cspell.jsonc",
+    ".cspell/**",
+    ".git/**",
+    "*.code-workspace",
+    ".local-gitignore",
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/{info,lfs,logs,refs,objects}/**",
+    ".git/{index,*refs,*HEAD}",
+    ".vscode",
+    ".vscode-insiders",
+    "**/*.code-workspace",
+    "content/chatgpt"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": ".vscode/ltex.dictionary.en-US.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "bash",
+    "win32",
+    "scientific-terms-us",
+    // "cesium",
+    "project-words",
+  ],
+  "words": [],
+  "ignoreWords": [],
+  "ignoreRegExpList": []
+}

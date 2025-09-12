@@ -18,6 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+      - uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "America/Chicago"
+          timezoneMacos: "America/Chicago"
+          timezoneWindows: "Central Standard Time"
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git info

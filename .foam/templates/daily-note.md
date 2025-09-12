@@ -13,4 +13,4 @@ foam_template:
 
 ## Daily notes
 
-* content
+* Content
